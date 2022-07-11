@@ -86,13 +86,3 @@ from
 (select id,course_id as prereq_id,semester,year from takes where course_id in
 (select prereq_id 
 from prereq)) as T,takes where takes.id = T.id;
-
-
-
-
-
-
-
-
-
-
